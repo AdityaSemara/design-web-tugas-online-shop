@@ -1,0 +1,765 @@
+*{
+	padding: 0px;
+	margin: 0 auto;
+}
+body{
+	overflow-x: hidden;
+}
+#bungkus{
+	width: 1366px;
+	height: auto;
+	overflow-x: hidden;
+	margin: auto;
+}
+/*menu-atas*/
+#menu-atas{
+	width: 1366px;
+	height: 40px;
+	background: #4cb1ca;
+}
+#menu-atas ul{
+	padding-right: 30px;
+	float: right;
+}
+#menu-atas ul li{
+	display: inline-block;
+	line-height: 40px;
+	padding-right: 5px;
+	color: #fff;
+}
+#menu-atas a{
+	color: #fff;
+	text-decoration: none;
+	transition: 0.5s ease-in-out;
+}
+#menu-atas a:hover{
+	color: #2F6FE0;
+}
+
+/*header*/
+#header{
+	width: 1366px;
+	height: 150px;
+}
+/*logo*/
+.logo{
+	width: 300px;
+	height: 150px;
+	float: left;
+}
+.logo h1{
+	line-height: 150px;
+	color: darkred;
+	font-size: 35px;
+	padding-left: 60px;
+}
+.logo span{
+	color: darkblue;	
+}
+/*menu*/
+.menu{
+	width: 500px;
+	height: 150px;
+	float: left;
+	position: relative;
+	z-index: 100;
+}
+.menu ul{
+	list-style: none;
+	padding: 0px;
+	margin-top: 55px;
+	z-index: 100;
+}
+.menu ul li{
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.menu ul li a{
+	color: maroon;
+	width: 100px;
+	height: 20px;
+	padding: 10px;
+	text-decoration: none;
+	float: left;
+	text-align: center;
+	font-size: 20px;
+	transition: 0.5s all ease;
+}
+.menu ul li ul li{
+	display: none;
+	clear: left;
+	background: rgba(43,136,223,0.76);
+	animation: animasidrop 2s ease;
+}
+.menu ul li a:hover{
+	color: #CB070A;
+}
+.menu ul li a:active{
+	color: blue;
+}
+.menu ul li:hover ul li{
+	display: block;
+}
+
+.menu ul li ul li a:hover
+{
+	background: #fff;
+}
+.menu ul li .active{
+	color: blue;
+}
+.menu ul li .active:hover{
+	color: blue;
+}
+/*search*/
+.search {
+	background: #fff;
+	border: 1px solid #ddd;
+	position: relative;
+	float: left;
+	margin-top: 55px;
+	margin-left: 80px;
+}
+.search input[type="text"] {
+	border: none;
+	outline: none;
+	background: none;
+	font-size:0.85em;
+    color:#999;
+	width:150px;
+	padding:7px;
+	-webkit-apperance:none;
+	margin:0;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+}
+.search input[type="text"]:focus{
+	width:160px;
+}
+.search input[type="submit"] {
+	  border: none;
+	  text-indent: -9999px;
+	  outline: none;
+	  cursor: pointer;
+	  background: url("../images/search1.png") no-repeat 2px 6px;
+	  width: 30px;
+	  height: 37px;
+	  padding: 8px;
+}	
+.search input[type="submit"]:active {
+	position:relative;
+}
+/*taglist*/
+.taglist{
+	margin-top: 50px;
+	float: left;
+	padding-left: 30px;
+}
+.taglist a i{
+	margin-right: 15px;
+}
+.taglist a .hati{
+	color: white;
+	background: #4cb1ca;
+	border-radius: 50%;
+	padding: 7px;
+	font-size: 28px;
+	transition: 1.5s all;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+}
+.taglist a .keranjang{
+	color: white;
+	background: #4cb1ca;
+	border-radius: 50%;
+	padding: 7px;
+	width: 30px;
+	height: 30px;
+	font-size: 28px;
+	transition: 1.5s all;
+	text-align: center;
+	vertical-align: middle;
+}
+.taglist a .hati:hover{
+	color: #FF0004;
+	transform: rotateZ(720deg);
+}
+.taglist a .keranjang:hover{
+	color: darkblue;
+	transform: rotateZ(720deg);
+}
+/*content-slider*/
+#content-slider{
+	position: relative;
+	overflow-x: hidden;
+	width: 1365px;
+	margin:10px auto;
+}
+.slideshow{
+	width: 1000%;
+	animation: slideshow 15s infinite;
+}
+.slideshow img{
+	float: left;
+	width: 1366px;
+}
+.slideshow .gambar{
+	width: 1366px;
+	height: 500px;	
+}
+
+/*--animation--*/
+@keyframes slideshow {
+	0%, 10%, 100% {
+		margin-left: 0;
+	}
+	20%, 30% {
+		margin-left: -1366px;
+	}
+	40%, 50%{
+		margin-left: -1366px;
+	}
+	60%, 70%{
+		margin-left: -2732px;
+	}
+	80%,90%{
+		margin-left: -4098px;
+	}
+	100%{
+		margin-left: 0;
+	}
+}
+
+@keyframes animasidrop
+{
+	from
+	{
+		transform: translateY(-40px);
+		opacity: 0;
+	}
+	
+	to
+	{
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+/*bungkus-gambar*/
+#bungkus-gambar{
+	width: 1180px;
+	height: 1030px;
+	margin: auto;
+	background: white;
+}
+.gambar-1{
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	margin: 10px 10px;
+}
+.img1{
+	margin-left: 5px;
+}
+.img2{
+	margin-left: 39px;
+}
+.img3{
+	margin-left: 5px;
+}
+.img3 img{
+	height: 294px;
+}
+.img4 img{
+	height: 294px;
+	margin-left: 19px;
+}
+.img5{
+	margin-left: 5px;
+}
+.img6{
+	margin-left: 14px;
+}
+.img6 img{
+	height: 273px;
+}
+.img7 img{
+	height: 273px;
+	margin-left: 15px;
+}
+.img1 .nama {
+	position: absolute;
+	top: 75%;
+	left: 35%;
+	right: 35%;
+	width: 180px;
+	text-align: center;
+}
+.img2 .nama{
+	position: absolute;
+	top: 75%;
+	left: 35%;
+	right: 35%;
+	width: 180px;
+	text-align: center;
+}
+.img3 .nama{
+	position: absolute;
+	top: 75%;
+	left: 35%;
+	right: 35%;
+	width: 180px;
+	text-align: center;
+}
+.img4 .nama{
+	position: absolute;
+	top: 75%;
+	left: 30%;
+	right: 30%;
+	width: 180px;
+	text-align: center;
+}
+.img5 .nama{
+	position: absolute;
+	top: 70%;
+	left: 25%;
+	right: 25%;
+	width: 180px;
+	text-align: center;
+}
+.img6 .nama{
+	position: absolute;
+	top: 70%;
+	left: 25%;
+	right: 25%;
+	width: 180px;
+	text-align: center;
+}
+.img7 .nama{
+	position: absolute;
+	top: 70%;
+	left: 20%;
+	right: 20%;
+	width: 230px;
+	text-align: center;
+}
+.nama span{
+	color: #fff;
+	font-size: 20px;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	text-transform: uppercase;
+	font-weight: 400;
+}
+.tombol-beli{
+	margin-top: 10px;
+}
+.tombol-beli a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	border: 1px solid #fff;
+	padding: 5px 12px;		
+	transition: 0.5s ease-in-out;
+}
+.tombol-beli a:hover{
+	background: #F13E41;
+	border: none;
+}
+
+/*container-produk*/
+#container-produk{
+	width: 1180px;
+	height: auto;
+	margin: auto;
+	margin-top: 20px;
+}
+.judul-produk{
+	margin-bottom: 20px;
+	text-align: center;
+}
+.judul-produk h2{
+	color: #2C64E5;
+	font-size: 30px;
+}
+#bungkus{
+	width: 1366px;
+	margin: auto;
+}
+#sampul-produk{
+	position: relative;
+	width: 280px;
+	text-align: center;
+	display: inline-block;
+	margin: 5px 5px;
+}
+#bungkus-produk{
+	border: 2px solid #DEDEDE;
+	padding: 40px 12px;
+}
+#sampul-produk:hover #bungkus-produk{
+	border: 2px solid maroon;
+	transition: 0.5s all ease;
+}
+#bungkus-produk img{
+	width: 100%;
+	transition: 0.5s all ease;
+}
+#sampul-produk:hover #bungkus-produk img{
+	transform: scale(0.9);
+	opacity: 1;
+}
+.mask{
+	position: absolute;
+	top: 45%;
+	bottom: 45px;
+	left: 25%;
+	right: 25%;
+	z-index: 2;
+	transition: 0.5s ease;
+	margin-top: -150px;
+	opacity: 0;
+}
+#sampul-produk:hover .mask{
+	margin-top: 0px;
+	opacity: 1;
+	
+}
+.mask i{
+	font-size: 20px;
+	color: #fff;
+	padding: 12px 12px;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: 0.5s ease;
+}
+.mask .lihat{
+	background: #F33F42;
+}
+.mask .beli{
+	background: #fff;
+	color: #F33F42;
+}
+.mask i:hover{
+	color: #3D46E7;
+}
+.masking{
+	width: 99.5%;
+	height: 99.5%;
+	background-color: rgba(0,0,0,0.61);
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	display: none;
+	transition: 0.9s ease;
+}
+#sampul-produk:hover .masking{
+	display: block;
+}
+#bungkus-produk h3{
+	color: maroon;
+	margin-bottom: 5px;
+}
+#bungkus-produk p a{
+	text-decoration: none;
+}
+#bungkus-produk p i{
+	color: #F33F42;
+}
+#bungkus-produk p span{
+	color: maroon;
+}
+
+/*continer-produk-bawah*/
+#container-produk-bawah{
+	width: 1180px;
+	height: auto;
+	margin: auto;
+	margin-top: 30px;
+}
+.judul-produk-bawah{
+	margin-bottom: 20px;
+	text-align: center;
+}
+.judul-produk-bawah h2{
+	color:#2C64E5 ;
+	font-size: 30px;
+}
+
+/*footer*/
+#footer{
+	width: 1366px;
+	height: 200px;
+	background: #4cb1ca;
+	margin-top: 50px;
+}
+.bungkus-footer{
+	width: 1180px;
+	height: 160px;
+	margin: auto;
+}
+.follow{
+	width: 393px;
+	height: auto;
+	margin: auto;
+	text-align: center;
+	float: left;
+}
+.follow h2 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+.follow a i{
+	background: white;
+	color: #4cb1ca;
+	font-size: 25px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	padding: 5px 5px;
+	border-radius: 50%;
+	transition: 0.5s ease-in-out;
+}
+.follow a i:hover{
+	transform: rotateZ(360deg);
+	background: #F04E50;color: #fff;
+}
+.my-account{
+	width: 393px;
+	height: auto;
+	float: left;
+	text-align: center;
+}
+.my-account h2{
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.my-account ul li{
+	list-style: none;
+	display: block;
+	padding-top: 5px;
+}
+.my-account ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+}
+.my-account ul li a:hover{
+	text-decoration: underline;
+	transition: 0.5s ease-in-out;
+}
+.contact-us{
+	width: 393px;
+	height: auto;
+	float: left;
+}
+.contact-us h2{
+	color: #fff;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.contact-us p{
+	margin-left:60px;
+	color: #fff;
+	font-size: 20px;
+}
+.contact-us i{
+	padding-right: 10px;
+}
+.footer-bawah{
+	height: 40px;
+	width: 1366px;
+	background: #258CA6;
+	text-align: center;
+	color: #fff;
+}
+.footer-bawah p{
+	font-size: 18px;
+	line-height: 40px;
+}
+
+/*register*/
+#sampul-register{
+	width: 1366px;
+	height: 420px;
+	border-top: 1px solid #4cb1ca;
+}
+.bungkus-register{
+	width: 1200px;
+	height: 380px;
+	margin: auto;
+	margin-top: 25px;
+}
+.register-atas h2, .register-bawah h2{
+	color:#4cb1ca;
+	font-size: 1.3em;
+	padding-bottom: 5px;
+	margin: 0;
+	font-weight:600;
+}
+.register-atas div, .register-bawah div {
+	width: 50%;
+	float: left;
+	margin: 10px 0;
+}
+.register-atas span, .register-bawah span {
+	color:#555;
+	font-size: 15px;
+	padding-bottom: 0.2em;
+	display: block;
+	text-transform: uppercase;
+}
+.register-atas input[type="text"], .register-bawah input[type="password"] {
+	border: 1px solid #EEE;
+	outline-color:#FF5B36;
+	width: 96%;
+	font-size: 1em;
+	padding: 0.5em;
+	transition: 0.5s ease-in-out;
+}
+.register-atas input[type="text"]:hover, .register-bawah input[type="password"]:hover {
+	border: 1px solid #EB3437;
+	outline-color:#FF5B36;
+	width: 96%;
+	font-size: 1em;
+	padding: 0.5em;
+}
+.register-atas input[type="text"]:focus, .register-bawah input[type="password"]:focus {
+	border: 1px solid #EB3437;
+	outline-color:#FF5B36;
+	width: 96%;
+	font-size: 1em;
+	padding: 0.5em;
+}
+.register-atas{
+	width: 1200px;
+	height: 200px;
+}
+.register-bawah{
+	width: 1200px;
+	height: 100px;
+	margin-top: 20px;
+}
+.submit{
+	margin-top: 20px;
+}
+.submit a{
+	text-decoration: none;
+}
+.submit a input[type='submit']{
+	background: #F13639;
+	border: none;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 400;
+	padding: 6px 12px;
+	font-size: 16px;
+	transition: 0.5s ease-in-out;
+	cursor: pointer;
+}
+.submit a input[type='submit']:hover{
+	background: #000000;
+}
+
+/*login*/
+#sampul-login{
+	width: 1366px;
+	height: 420px;
+	border-top: 1px solid #4cb1ca;
+}
+.bungkus-login{
+	width: 1200px;
+	height: 400px;
+	margin: auto;
+	background: white;
+	margin-top: 20px;
+}
+.login{
+	width: 595px;
+	height: 300px;
+	background: white;
+	float: left;
+	margin-top: 10px;
+}
+.new-customer{
+	width:595px;
+	height: 300px;
+	margin-top: 10px;
+	float: left;
+	background: white;
+	margin-left: 10px;
+}
+.login h2{
+	color: #4cb1ca;
+}
+.login div{
+	width: 96%;
+	float: left;
+	margin: 10px 0;
+}
+.login span{
+	color:#555;
+	font-size: 15px;
+	padding-bottom: 0.2em;
+	display: block;
+	text-transform: uppercase;
+}
+.login input[type='text']{
+	border: 1px solid #EEE;
+	outline-color:#FF5B36;
+	width: 100%;
+	font-size: 1em;
+	padding: 0.5em;
+	transition: 0.5s ease-in-out;
+}
+.login input[type='text']:hover{
+	border: 1px solid #EB3437;
+	outline-color:#FF5B36;
+	width: 100%;
+	font-size: 1em;
+	padding: 0.5em;
+}
+.login input[type='text']:focus{
+	border: 1px solid #EB3437;
+	outline-color:#FF5B36;
+	width: 100%;
+	font-size: 1em;
+	padding: 0.5em;
+}
+.forgot{
+	color: #000;
+	text-decoration: none;
+}
+.forgot:hover{
+	text-decoration: underline;
+}
+
+.new-customer h2{
+	color: #4cb1ca;
+	margin-bottom: 10px;
+}
+
+/*men*/
+#sampul-produk-5{
+	width: 1366px;
+	height: auto;
+	border-top: 1px solid #4cb1ca;
+}
+.bungkus-produk-5{
+	width: 1250px;
+	height: auto;
+	margin: auto;
+	background: white;
+	margin-top: 20px;
+	text-align: center;
+}
+
